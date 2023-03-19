@@ -1,0 +1,27 @@
+  input[type = button] {
+    background-color: blue;
+    text-align: center;
+    width: 25%;
+    border-color: blue;
+    border-style:single;
+    border-width: 5px;
+    border-radius: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    color: white;
+  }
+
+  input[type = number] {
+    font-size: large;
+  }
+
+  p {
+    font-size: x-large;
+}
+
+  label{
+    font-size: x-large;
+
+  }
+
+

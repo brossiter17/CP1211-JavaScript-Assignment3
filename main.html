@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Display Even Numbers</title>
+        <link rel="stylesheet" href="assignment3styles.css">
+    </head>
+
+    <body>
+        <h1>Display Even Numbers</h1>
+        <label for="number_input"><b>Enter a number:</b></label>
+        <br/>         
+        <br/> 
+        <input type="number" id="number_input">
+        <br/> 
+        <br/> 
+        <input type= "button" id="submit" onclick="evenFunction()" value="Display Even Numbers">
+        <p id="display_answer"></p>    
+        <script>
+            function evenFunction(){
+                const number_entered = document.getElementById("number_input").value;
+                let even_numbers = "";
+                for (let i = 0; i <= number_entered; i += 2) {
+                    even_numbers += i + ", ";
+                }
+                document.getElementById("display_answer").innerHTML = 'Even numbers between 0 and ' 
+                    + number_entered + ' are : ' + even_numbers  
+            }
+        </script>
+    </body>
+
+</html>
